@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixologia Sonora PRO | Drinks Perfeitos em Áudio</title>
+    <style>
+        /* Estilo Global */
+        :root {
+            --bg-paper: #FDF6EC; /* Papel Envelhecido Claro */
+            --text-dark: #2B211E;
+            --accent-gold: #C87B5A; /* Terracota/Dourado Suave */
+            --accent-purple: #7A5C6E;
+            --white: #FFFFFF;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-paper);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+            border-bottom: 2px solid var(--accent-gold);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-purple);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: #555;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 250px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        /* Substitua src pela URL da sua capa real depois */
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .benefits {
+            text-align: left;
+            margin: 30px 0;
+            padding: 20px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 15px;
+        }
+
+        .icon {
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        .price-box {
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-gold));
+            color: white;
+            border-radius: 12px;
+        }
+
+        .price-old {
+            text-decoration: line-through;
+            opacity: 0.8;
+            font-size: 1rem;
+        }
+
+        .price-now {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            background-color: var(--white);
+            color: var(--accent-purple);
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 15px;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .btn-buy:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Mixologia Sonora PRO</h1>
+        <h2>Aprenda a fazer 15 drinks perfeitos ouvindo nosso guia narrado.</h2>
+    </header>
+
+    <!-- Espaço para Capa -->
+    <div class="hero-image">
+        <img src="https://via.placeholder.com/600x400?text=Capa+Mixologia+Sonora" alt="Capa do Audiobook">
+        <!-- Depois troque o src pela URL da imagem hospedada no Cloudflare R2 -->
+    </div>
+
+    <section class="benefits">
+        <div class="benefit-item">
+            <span class="icon">🎧</span>
+            <div>
+                <strong>Áudio Narrado Profissional:</strong> Voz natural (Francisca Neural) com pausas estratégicas para você preparar enquanto escuta.
+            </div>
+        </div>
+        <div class="benefit-item">
+            <span class="icon">🍸</span>
+            <div>
+                <strong>Clássicos Alcoólicos:</strong> Caipirinha, Quentão, Mojito Tropical, Gin Tônica Botânica e mais 4 receitas exclusivas.
+            </div>
+        </div>
+        <div class="benefit-item">
+            <span class="icon">🎁</span>
+            <div>
+                <strong>Bônus Zero Álcool:</strong> Leve também as 7 receitas de Mocktails e Shots Funcionais gratuitamente na compra de hoje.
+            </div>
+        </div>
+    </section>
+
+    <section class="price-box">
+        <p>Oferta de Lançamento</p>
+        <span class="price-old">De R$ 49,90</span>
+        <span class="price-now">Por R$ 14,90</span>
+        <p style="font-size: 0.9rem; margin-top: 10px;">Pagamento único via Pix ou Cartão.</p>
+        
+        <!-- LINK DO MERCADO PAGO AQUI -->
+        <!-- Você deve substituir esta URL pelo link gerado no painel do MP -->
+        <a href="#" id="link-compra" class="btn-buy">QUERO MEUS DRINKS AGORA ➔</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mixologia Sonora PRO. Todos os direitos reservados.</p>
+        <p>Satisfação garantida ou reembolso em 7 dias.</p>
+    </footer>
+</div>
+
+<script>
+    // Lógica simples para abrir o checkout do Mercado Pago
+    document.getElementById('link-compra').addEventListener('click', function(e) {
+        e.preventDefault();
+        // Aqui entra a URL do seu Link de Pagamento do Mercado Pago
+        const mpUrl = "COLE_AQUI_SEU_LINK_DO_MERCADO_PAGO"; 
+        
+        if(mpUrl !== "COLE_AQUI_SEU_LINK_DO_MERCADO_PAGO") {
+            window.location.href = mpUrl;
+        } else {
+            alert("Erro: Configure o link de pagamento primeiro!");
+        }
+    });
+</script>
+
+</body>
+</html>
